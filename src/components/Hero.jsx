@@ -10,7 +10,7 @@ const Hero = () => {
                             Mayur Hedaoo
                         </h1>
                         <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">
-                            React Native Developer
+                            React Native (Expo) Developer
                         </span>
                         <p className="my-2 max-w-xl py-6 font-thin tracking-tighter ">
                             {HERO_CONTENT}
