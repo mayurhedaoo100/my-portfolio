@@ -19,7 +19,7 @@ const Hero = () => {
                             {HERO_CONTENT}
                         </p>
                         
-  <button className="relative px-6 py-2 mb-4 font-thin text-white bg-gradient-to-r from-neutral-800 via-neutral-800 to-neutral-900 rounded-lg">Check Out What I Offer <FontAwesomeIcon icon={faPaperPlane} className="text-gray-300 w-4 h-4 ml-2" /></button>
+  <button className="relative px-6 py-2 mb-4 shadow-neutral-600 shadow-inner font-thin text-white bg-gradient-to-r from-neutral-800 via-neutral-800 to-neutral-900 rounded-lg">Check Out What I Offer <FontAwesomeIcon icon={faPaperPlane} className="text-gray-300 w-4 h-4 ml-2" /></button>
                     </div>
                 </div>
                 <div className="w-full lg:w-1/2 lg:p-8">
