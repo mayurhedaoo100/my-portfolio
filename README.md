@@ -9,7 +9,7 @@ Welcome to my **Portfolio** repository! This project showcases my skills, projec
 
 This portfolio site is built using the following technologies:
 
-- **Frameworks & Libraries**: React, Vite, Tailwind CSS
+- **Frameworks & Libraries**: React, Vite, Tailwind CSS, Framer motion
 - **Deployment**: Netlify, GitHub Pages (for static content)
 
 ## 🤝 Available for Work & Collaboration
