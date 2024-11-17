@@ -14,10 +14,10 @@ const Navbar = () => {
             </div>
 
             <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-                <FaGithub/>
-                <FaLinkedin />
-                <FaInstagram/>
-                <FaSquareXTwitter/>
+                <a href="https://github.com/mayurhedaoo100" target="_blank"><FaGithub/></a>
+                <a href="https://www.linkedin.com/in/hedaoomayur/" target="_blank"><FaLinkedin /></a>
+                <a href="https://www.instagram.com/hedaoomayur/" target="_blank"><FaInstagram/></a>
+                <a href="https://x.com/HedaooMayur" target="_blank"><FaSquareXTwitter/></a>
             </div>
         </nav>
     )
