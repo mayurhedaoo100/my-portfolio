@@ -10,7 +10,7 @@ const Contact = () =>{
             transition={{duration: 0.5}}
             className="my-10 text-center text-4xl">Get in Touch</motion.h2>
 
-<form name="contact" method="POST" data-netlify="true"
+<form name="contact" method="POST" data-netlify="true" action="/thank-you"
  class="max-w-lg mx-auto p-6">
 <input type="hidden" name="form-name" value="contact" />
     <input
