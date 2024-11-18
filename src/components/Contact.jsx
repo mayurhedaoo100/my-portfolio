@@ -11,6 +11,7 @@ const Contact = () =>{
             className="my-10 text-center text-4xl">Get in Touch</motion.h2>
 
 <form name="contact" netlify class="max-w-lg mx-auto p-6">
+<input type="hidden" name="form-name" value="contact" />
     <input
       type="text"
       id="name"
