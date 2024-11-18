@@ -41,11 +41,11 @@ const Contact = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }} className="my-10 text-center text-4xl">Get in Touch</motion.h2>
 
-      <form
+      <form netlify
         name="contact"
         method="POST"
-        data-netlify="true"
-        onSubmit="submit"
+        action="https://formspree.io/f/xyzypewl"
+        onSubmit={handleSubmit}
         className="max-w-lg mx-auto p-6"
       >
         <input type="hidden" name="form-name" value="contact" />
