@@ -55,7 +55,7 @@ const Technologies = () => {
                     <SiFramer className="text-7xl text-pink-500" />
                 </motion.div>
 
-                <motion.div
+                {/* <motion.div
                 variants={inconVariants(2.5)}
                 initial="initial"
                 animate="animate"
@@ -69,6 +69,14 @@ const Technologies = () => {
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
                     <SiExpress className="text-7xl text-gray-500" />
+                </motion.div> */}
+
+<motion.div
+                variants={inconVariants(3)}
+                initial="initial"
+                animate="animate"
+                className="rounded-2xl border-4 border-neutral-800 p-4">
+                    <SiSupabase className="text-7xl text-emerald-500" />
                 </motion.div>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-4 mt-4">
@@ -78,14 +86,6 @@ const Technologies = () => {
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
                     <SiFirebase className="text-7xl text-yellow-500" />
-                </motion.div>
-
-                <motion.div
-                variants={inconVariants(3)}
-                initial="initial"
-                animate="animate"
-                className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <SiSupabase className="text-7xl text-emerald-500" />
                 </motion.div>
 
                 <motion.div
