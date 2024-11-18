@@ -11,8 +11,9 @@ const Contact = () => {
     const formData = new FormData(event.target);
     const data = {
       name: formData.get('name'),
-      phone: formData.get('phone'),
+      subject: formData.get('subject'),
       email: formData.get('email'),
+      message: formData.get('message'),
     };
 
     const response = await fetch('https://formspree.io/f/xyzypewl', {
@@ -43,26 +44,18 @@ const Contact = () => {
       <form
         name="contact"
         method="POST"
-        action="https://formspree.io/f/xyzypewl"
-        onSubmit={handleSubmit}
+        data-netlify="true"
+        onSubmit="submit"
         className="max-w-lg mx-auto p-6"
       >
         <input type="hidden" name="form-name" value="contact" />
-        
+
         <input
           type="text"
           id="name"
           name="name"
           placeholder="Your Name"
           required
-          className="w-full font-thin mb-3 px-4 py-2 border bg-transparent border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-neutral-700"
-        />
-
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          placeholder="Phone number"
           className="w-full font-thin mb-3 px-4 py-2 border bg-transparent border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-neutral-700"
         />
 
@@ -74,6 +67,24 @@ const Contact = () => {
           required
           className="w-full font-thin mb-4 px-4 py-2 border bg-transparent border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-neutral-700"
         />
+
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Subject"
+          required
+          className="w-full font-thin mb-3 px-4 py-2 border bg-transparent border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-neutral-700"
+        />
+
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          required
+          rows="4"
+          className="w-full font-thin mb-4 px-4 py-2 border bg-transparent border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-neutral-700"
+        ></textarea>
 
         <button
           type="submit"
