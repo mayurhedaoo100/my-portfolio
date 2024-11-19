@@ -1,6 +1,7 @@
 import aboutImg from "../assets/about.jpg"
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
+import { FaPaintBrush } from "react-icons/fa";
 
 const About = () => {
     return (
@@ -30,6 +31,24 @@ const About = () => {
                     <div className="flex justify-center lg:justify-start">
                         <p className="my-2 max-w-xl py-6">{ABOUT_TEXT}</p>
                     </div>
+                    <p className="italic font-light mb-4">
+                    "I specialize in photo editing and manipulation using Photoshop. I enhance images, create unique visual effects, and bring creative ideas to life."
+      </p>
+
+      {/* Instagram Link Box with Framer Motion */}
+      <motion.a
+        href="https://www.instagram.com/thevfxstore"
+        target="_blank"
+        className="inline-block bg-gradient-to-r from-blue-500 to-purple-500 text-white font-light py-2 px-4 rounded-lg"
+        whileHover={{
+          scale: 1.05, // Scale up on hover
+          backgroundColor: "#6EE7B7", // Change color
+        }}
+        whileTap={{ scale: 0.95 }} // Slight shrink effect when clicked
+        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      >
+        <FaPaintBrush className="inline-block text-lg mr-2" /> View My Designs on Instagram
+      </motion.a>
                 </motion.div>
             </div>
         </div>
