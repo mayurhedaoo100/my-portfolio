@@ -19,7 +19,7 @@ const CertificatesSection = () => {
             </motion.h2>
 
       {/* Auto-Scrolling Certificates */}
-      <div className="flex lg:justify-center space-x-4 overflow-x-auto p-4 scrollbar-hide">
+      <div className="flex justify-start space-x-4 overflow-x-auto p-4 scrollbar-hide">
         {CERTIFICATES.map((cert) => (
           <motion.img
             key={cert.id}
