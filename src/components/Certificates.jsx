@@ -1,22 +1,46 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { CERTIFICATES } from "../constants";
-
 
 const CertificatesSection = () => {
   const [selectedCertificate, setSelectedCertificate] = useState(null);
 
-  const handleClose = () => setSelectedCertificate(null);
+  const handleClose = () => {
+    setSelectedCertificate(null);
+    // Remove history state when closing
+    window.history.back();
+  };
+
+  useEffect(() => {
+    const handlePopState = () => {
+      if (selectedCertificate) {
+        setSelectedCertificate(null);
+      }
+    };
+
+    window.addEventListener("popstate", handlePopState);
+
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+    };
+  }, [selectedCertificate]);
+
+  const handleCertificateClick = (cert) => {
+    setSelectedCertificate(cert);
+    // Add a new history entry when opening the modal
+    window.history.pushState(null, "", window.location.href);
+  };
 
   return (
     <section className="pb-16 border-b border-neutral-900">
       <motion.h2
-            initial={{y: -100, opacity:0}}
-            whileInView={{y:0, opacity:1}}
-            transition={{duration: 0.5}}
-            className="my-10 text-center text-4xl">
-                Main Certifications
-            </motion.h2>
+        initial={{ y: -100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="my-10 text-center text-4xl"
+      >
+        Main Certifications
+      </motion.h2>
 
       {/* Auto-Scrolling Certificates */}
       <div className="flex justify-start space-x-4 overflow-x-auto p-4 scrollbar-hide">
@@ -27,7 +51,7 @@ const CertificatesSection = () => {
             alt={cert.title}
             className="w-60 h-36 object-cover rounded-lg cursor-pointer hover:scale-105 border border-gray-700"
             whileHover={{ scale: 1.1 }}
-            onClick={() => setSelectedCertificate(cert)}
+            onClick={() => handleCertificateClick(cert)}
           />
         ))}
       </div>
