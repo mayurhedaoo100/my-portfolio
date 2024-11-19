@@ -5,7 +5,7 @@ import { FaPaintBrush } from "react-icons/fa";
 
 const About = () => {
     return (
-        <div className="border-b border-neutral-900 pb-a">
+        <div>
             <motion.h2
             initial={{y: -100, opacity:0}}
             whileInView={{y:0, opacity:1}}
@@ -28,7 +28,7 @@ const About = () => {
                 whileInView={{opacity:1 , x:0}}
                 transition={{duration:1, delay: 0.5}}
                 className="w-full lg:w-1/2">
-                    <div className="flex justify-center lg:justify-start">
+                    <div className="flex justify-center font-light lg:justify-start">
                         <p className="my-2 max-w-xl py-6">{ABOUT_TEXT}</p>
                     </div>
                     <p className="italic font-light mb-4">
