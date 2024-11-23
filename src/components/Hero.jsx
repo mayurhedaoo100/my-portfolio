@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profile_pic from "../assets/Profile.jpg"
+import profile_pic from "../assets/profile.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { delay, motion } from "framer-motion"
