@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profile_pic from "../assets/kevinRushProfile.png"
+import profile_pic from "../assets/Profile.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { delay, motion } from "framer-motion"
@@ -43,7 +43,7 @@ const Hero = () => {
                 </div>
                 <div className="w-full lg:w-1/2 lg:p-8">
                     <div className="flex justify-center">
-                        <motion.img initial={{ x: 100, opacity: 0 }}
+                        <motion.img initial={{ x: 100, opacity: 0 }} className="rounded-xl"
                             animate={{ x: 0, opacity: 1 }} transition={{ duration:0.5, delay: 1.3 }}
                             src={profile_pic} />
                     </div>
