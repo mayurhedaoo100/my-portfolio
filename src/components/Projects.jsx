@@ -1,5 +1,6 @@
 import {PROJECTS} from "../constants";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Projects = () =>{
     return(
@@ -32,6 +33,7 @@ const Projects = () =>{
                             {project.technologies.map((tech, index) =>(
                                 <span key={index} className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800">{tech}</span>
                             ))}
+                            <p><Link to="/project2" className="text-stone-500 mt-4 inline-block bg-neutral-900 px-1 py-0.5 rounded">View Details</Link></p>
                         </motion.div>
                     </div>
                 ))}

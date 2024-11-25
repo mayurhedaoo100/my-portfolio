@@ -16,7 +16,7 @@
     </script>
     <!-- End Google Tag Manager -->
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-6D6EX28TG7"
@@ -27,18 +27,55 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-6D6EX28TG7");
     </script>
 
+    <!-- Meta Tags -->
     <meta charset="UTF-8" />
     <meta
       name="google-site-verification"
       content="vf_GVlAERA7DW9VoqF052FyrMCCrRHMypsAdi6EURes"
     />
-    <link rel="icon" type="image/svg+xml" href="./src/assets/MHlogo.png" />
+    <meta
+      name="description"
+      content="Portfolio of Mayur Hedaoo - React Native developer and technical enthusiast. Explore my projects, skills, and journey."
+    />
+    <meta
+      name="keywords"
+      content="Mayur Hedaoo, React Native Developer, Portfolio, Projects, Skills"
+    />
+    <meta name="author" content="Mayur Hedaoo" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mayur Hedaoo</title>
+
+    <!-- Title -->
+    <title>Mayur Hedaoo - React Native Developer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon.svg" type="image/svg+xml">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mayur Hedaoo",
+        "description": "Personal portfolio of Mayur Hedaoo showcasing projects, skills, and achievements.",
+        "url": "https://hedaoomayur.netlify.app",
+        "image": "https://hedaoomayur.netlify.app/src/assets/MHlogo.png",
+        "sameAs": [
+          "https://www.linkedin.com/in/hedaoomayur",
+          "https://instagram.com/hedaoomayur",
+          "https://github.com/mayurhedaoo100",
+          "https://twitter.com/hedaoomayur"
+        ],
+        "jobTitle": "React Native Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Freelance"
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -53,7 +90,8 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <div id="root"></div>
+    <div id="root">
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
