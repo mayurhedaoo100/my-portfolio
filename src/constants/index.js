@@ -1,7 +1,6 @@
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
 
 import cert1 from "../assets/certificates/google-digital-marketing.jpg";
 import cert2 from "../assets/certificates/microsoft-azure-fundamentals.png";
@@ -16,32 +15,28 @@ export const ABOUT_TEXT = `I am an eager and self-driven developer with a strong
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "YuvaFit",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "YuvaFit is an app designed to promote physical and mental well-being among the youth, helping them manage stress and stay fit. It offers personalized fitness routines, mindfulness exercises, and progress tracking to support a healthy lifestyle.",
+    technologies: ["React Native", "Expo", "Firebase", "Firestore"],
+    Link: "#"
   },
   {
-    title: "Task Management App",
+    title: "Budget Buddy",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "BudgetBuddy is an expense tracker app designed to help users manage their finances, track spending, and set budgets. It allows easy categorization of expenses and provides insights into financial habits, helping users maintain a balanced budget.",
+    technologies: ["React Native", "Expo", "Firebase Authentication"],
+    Link: "https://github.com/mayurhedaoo100/BudgetBuddy"
   },
   {
     title: "Portfolio Website",
     image: project3,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-  },
-  {
-    title: "Blogging Platform",
-    image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    technologies: ["React", "Vite", "TailwindCSS", "Framer Motion"],
+    Link: "https://github.com/mayurhedaoo100/my-portfolio"
   },
 ];
 
