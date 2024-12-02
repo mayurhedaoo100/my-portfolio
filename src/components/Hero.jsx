@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { delay, motion } from "framer-motion"
 import { Container } from "postcss";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
@@ -13,6 +14,11 @@ const container = (delay) => ({
 const Hero = () => {
     return (
         <div className="border-b border-neutral-900 pb-4 lg:mb-35">
+            <DotLottieReact className="h-32 w-auto fixed lg:hidden top-2/3 -right-24 transform -translate-y-1/2"
+      src="https://lottie.host/9aab9c7d-2b81-4486-83c2-b58538558682/qsJLCNjYiD.lottie"
+      loop
+      autoplay
+    />
             <div className="flex flex-wrap">
                 <div className="w-full lg:w-1/2">
                     <div className="flex flex-col items-center lg:items-start">
@@ -40,9 +46,17 @@ const Hero = () => {
                         initial="hidden" animate="visible"
                         className="relative px-6 py-2 mb-6 shadow-neutral-600 shadow-inner font-thin text-white bg-gradient-to-r from-neutral-800 via-neutral-800 to-neutral-900 rounded-lg">Check Out What I Offer <FontAwesomeIcon icon={faPaperPlane} className="text-gray-300 w-4 h-4 ml-2" /></motion.button></a>
                     </div>
+                    <DotLottieReact className="h-32 w-auto lg:block hidden"
+      src="https://lottie.host/9aab9c7d-2b81-4486-83c2-b58538558682/qsJLCNjYiD.lottie"
+      loop
+      autoplay
+    />
+                    
                 </div>
+                
                 <div className="w-full lg:w-1/2 lg:p-8">
                     <div className="flex justify-center">
+                        
                         <motion.img initial={{ x: 100, opacity: 0 }} className="rounded-xl"
                             animate={{ x: 0, opacity: 1 }} transition={{ duration:0.5, delay: 1.3 }}
                             src={profile_pic} />

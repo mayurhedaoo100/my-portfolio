@@ -5,9 +5,11 @@ import project3 from "../assets/projects/project-3.jpg";
 import cert1 from "../assets/certificates/google-digital-marketing.jpg";
 import cert2 from "../assets/certificates/microsoft-azure-fundamentals.png";
 import cert3 from "../assets/certificates/google-play-listing.jpg";
-import cert4 from "../assets/certificates/hplife-datascience.jpg";
-import cert5 from "../assets/certificates/intro-cyber-security.jpg";
-import cert6 from "../assets/certificates/intro-nfts.jpg";
+import cert4 from "../assets/certificates/accenture-software-engineering.jpg"
+import cert5 from "../assets/certificates/hplife-datascience.jpg";
+import cert6 from "../assets/certificates/mastercard-cybersecurity.jpg"
+import cert7 from "../assets/certificates/intro-cyber-security.jpg";
+import cert8 from "../assets/certificates/intro-nfts.jpg";
 
 export const HERO_CONTENT = `Develops efficient and scalable applications using React Native. Focuses on creating smooth, user-friendly experiences with responsive designs and reliable backend integration. Applications are built with modern technologies to ensure high performance and seamless functionality, delivering real value to users.`;
 
@@ -20,7 +22,7 @@ export const PROJECTS = [
     description:
       "YuvaFit is an app designed to promote physical and mental well-being among the youth, helping them manage stress and stay fit. It offers personalized fitness routines, mindfulness exercises, and progress tracking to support a healthy lifestyle.",
     technologies: ["React Native", "Expo", "Firebase", "Firestore"],
-    Link: "#"
+    Link: "https://yuvafit.netlify.app"
   },
   {
     title: "Budget Buddy",
@@ -72,26 +74,42 @@ export const CERTIFICATES = [
   },
   {
     id: 4,
-    title: "HP Life Data Science & Analytics",
-    details: "Developed skills in data analysis, visualization, and data-driven decision-making techniques.",
-    date: "November 2024",
+    title: "Accenture Software Engineering Simulation",
+    details: "Demonstrates expertise in software engineering, covering key concepts such as coding, testing, and debugging through an interactive, real-world simulation.",
+    date: "December 2024",
     image: cert4,
-    verificationLink: "https://www.life-global.org/certificate/8cfc89bc-7db3-4ec7-b519-239597e4b165",
+    verificationLink: "",
   },
   {
     id: 5,
-    title: "Introduction to Cyber Security by Simplilearn",
-    details: "Provides foundational knowledge of cyber threats, security measures, and best practices.",
-    date: "April 2022",
+    title: "HP Life Data Science & Analytics",
+    details: "Developed skills in data analysis, visualization, and data-driven decision-making techniques.",
+    date: "November 2024",
     image: cert5,
-    verificationLink: "https://simpli-web.app.link/e/lZjJUkPwEOb",
+    verificationLink: "https://www.life-global.org/certificate/8cfc89bc-7db3-4ec7-b519-239597e4b165",
   },
   {
     id: 6,
+    title: "Mastercard Cybersecurity Job Simulation",
+    details: "Practical experience in detecting and preventing phishing attacks, helping individuals strengthen their skills in safeguarding digital environments against cyber threats.",
+    date: "December 2024",
+    image: cert6,
+    verificationLink: "",
+  },
+  {
+    id: 7,
+    title: "Introduction to Cyber Security by Simplilearn",
+    details: "Provides foundational knowledge of cyber threats, security measures, and best practices.",
+    date: "April 2022",
+    image: cert7,
+    verificationLink: "https://simpli-web.app.link/e/lZjJUkPwEOb",
+  },
+  {
+    id: 8,
     title: "Upgrads Introduction to NFTs",
     details: "Explores the basics of Non-Fungible Tokens (NFTs), blockchain technology, and their applications.",
     date: "April 2022",
-    image: cert6,
+    image: cert8,
     verificationLink: "https://www.credential.net/e8925564-61c4-4435-8fc1-95d771e0119c#acc.qwPJN0AT",
   },
   // Add more certificates
