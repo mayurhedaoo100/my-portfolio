@@ -13,7 +13,9 @@ import cert8 from "../assets/certificates/intro-nfts.jpg";
 
 export const HERO_CONTENT = `Develops efficient and scalable applications using React Native. Focuses on creating smooth, user-friendly experiences with responsive designs and reliable backend integration. Applications are built with modern technologies to ensure high performance and seamless functionality, delivering real value to users.`;
 
-export const ABOUT_TEXT = `I am an eager and self-driven developer with a strong interest in mobile application development. My enthusiasm for learning and my dedication to improving my skills help me stay up-to-date with the latest trends and technologies. I focus on continuous growth and adaptability, constantly seeking opportunities to enhance my knowledge and contribute effectively to the projects I work on. My goal is to develop impactful applications that are both user-centric and technically robust. I work with technologies like React Native, Tailwind CSS, Framer motion, Firebase, MongoDB, and MySQL to build high-performance, scalable mobile apps. Each project is an opportunity to innovate and apply my skills in creating solutions that deliver real value to users, while constantly evolving and learning from new challenges.`;
+export const ABOUT_TEXT = `I am an eager and self-driven learner with a strong interest in mobile application development. My enthusiasm for learning and improving my skills keeps me focused on staying current with the latest technologies and trends. I believe in continuous growth and adaptability, always seeking opportunities to expand my knowledge and contribute effectively to the projects I work on.
+
+My goal is to create impactful, user-centric applications that are both functional and technically strong. I work with technologies such as React Native, Tailwind CSS, Framer Motion, Firebase, to build scalable, high-performance mobile apps. Each project presents a chance to apply what I’ve learned while constantly evolving through new challenges and gaining valuable experience.`;
 
 export const PROJECTS = [
   {
