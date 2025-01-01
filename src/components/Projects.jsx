@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const Projects = () =>{
     return(
+        <div id="projects">
         <div className="boder-b border-neutral-900 pb-4">
             <motion.h2
             initial={{y: -100, opacity:0}}
@@ -38,7 +39,7 @@ const Projects = () =>{
                     </div>
                 ))}
             </div>
-        </div>
+        </div></div>
     );
 };
 

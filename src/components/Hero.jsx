@@ -41,10 +41,10 @@ const Hero = () => {
                             {HERO_CONTENT}
                         </motion.p>
 
-                        <a href="#"><motion.button 
+                        <a href="#projects"><motion.button 
                         variants={container(0.95)}
                         initial="hidden" animate="visible"
-                        className="relative px-6 py-2 mb-6 shadow-neutral-600 shadow-inner font-thin text-white bg-gradient-to-r from-neutral-800 via-neutral-800 to-neutral-900 rounded-lg">Check Out What I Offer <FontAwesomeIcon icon={faPaperPlane} className="text-gray-300 w-4 h-4 ml-2" /></motion.button></a>
+                        className="relative px-6 py-2 mb-6 shadow-neutral-600 shadow-inner font-thin text-white bg-gradient-to-r from-neutral-800 via-neutral-800 to-neutral-900 rounded-lg">Go to my Featured Projects <FontAwesomeIcon icon={faPaperPlane} className="text-gray-300 w-4 h-4 ml-2" /></motion.button></a>
                     </div>
                     <DotLottieReact className="h-32 w-auto lg:block hidden"
       src="https://lottie.host/9aab9c7d-2b81-4486-83c2-b58538558682/qsJLCNjYiD.lottie"
